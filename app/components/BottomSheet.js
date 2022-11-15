@@ -9,6 +9,7 @@ const height = Dimensions.get("window").height
 const MAX_TRANSLATE_Y = -height + 50;
 
 type BottomSheetProps = {}
+
 export type BottomSheetRefProps = {
     scrollTo:(destination)
 }
@@ -61,7 +62,6 @@ const BottomSheet = React.forwardRef(({},ref) => {
         <Animated.View style={[styles.BottomSheetContainer,rBottomSheetStyle]}>
             <View style={styles.line}/>
             <Button onPress={()=>Alert.alert("Hello")} buttonStyle={styles.cancelbtn}>
-                <Text style={styles.txt}> Cancel</Text>
             </Button>
             
         </Animated.View>

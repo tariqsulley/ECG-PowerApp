@@ -8,6 +8,7 @@ import { TouchableOpacity } from 'react-native'
 import FaultView from './ComplaintPageScreens/Fault'
 import DisconnectionView from './ComplaintPageScreens/Disconnetion'
 import EnquiryView from './ComplaintPageScreens/GeneralEnquiry'
+import TheftView from './ComplaintPageScreens/Theft'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 const Stack = createNativeStackNavigator()
@@ -74,6 +75,7 @@ class ComplaintView extends Component{
       <Stack.Screen options={{headerShown:true}} name="Fault" component={FaultView}/>
       <Stack.Screen options={{headerShown: true}} name="Disconnection" component={DisconnectionView}/>
       <Stack.Screen optoions = {{headerShown:true}} name = "Enquiry" component={EnquiryView}/>
+      <Stack.Screen optoions = {{headerShown:true}} name = "Theft" component={TheftView}/>
      </Stack.Navigator>
     )
   }

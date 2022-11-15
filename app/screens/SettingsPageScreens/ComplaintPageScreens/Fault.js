@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import ComplaintPageTemplate from "./ComplaintPageTemplate"
+
 let props = {
     title: "Report Fault/Outage",
     titleDesc: "You will receive our response via email",
@@ -10,8 +11,6 @@ let props = {
     attachImg: "Attach an Image(optional)",
     reportBtn: "REPORT THIS ISSUE"
 }
-
-
 
 class FaultView extends Component{
     constructor(props){
