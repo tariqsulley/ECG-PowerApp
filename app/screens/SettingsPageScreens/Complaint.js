@@ -7,11 +7,12 @@ import DangerousIcon from "react-native-vector-icons/MaterialIcons"
 import { TouchableOpacity } from 'react-native'
 import FaultView from './ComplaintPageScreens/Fault'
 import DisconnectionView from './ComplaintPageScreens/Disconnetion'
+import EnquiryView from './ComplaintPageScreens/GeneralEnquiry'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 const Stack = createNativeStackNavigator()
 
-const data = [{title:"Fault/Outage", name:"Fault", text:"Report any meter or transmission fault.",
+const data = [{title:"Fault/Outage", name:"Fault", text:"Report any meter or transmission \nfault.",
               icon: <BulbIcon  name="lightbulb-off" size={50}/>},
               {title:"Disconnection", name:"Disconnection", 
               text:"Get help to resolve any disconnection",
@@ -45,8 +46,8 @@ render() {
             </View>
 
             <View>
-            <Text> {item.title}</Text>
-            <Text> {item.text}</Text>
+            <Text style={{fontWeight:"bold", marginBottom: 5}}> {item.title}</Text>
+            <Text style={{color:"grey"}}> {item.text}</Text>
             </View>
 
             </TouchableOpacity>
@@ -72,6 +73,7 @@ class ComplaintView extends Component{
       <Stack.Screen options={{headerShown:false}} name="Complaint" component={Complaint}/>
       <Stack.Screen options={{headerShown:true}} name="Fault" component={FaultView}/>
       <Stack.Screen options={{headerShown: true}} name="Disconnection" component={DisconnectionView}/>
+      <Stack.Screen optoions = {{headerShown:true}} name = "Enquiry" component={EnquiryView}/>
      </Stack.Navigator>
     )
   }
