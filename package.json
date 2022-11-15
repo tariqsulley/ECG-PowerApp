@@ -1,0 +1,36 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "^6.4.0",
+    "@react-navigation/native": "^6.0.13",
+    "@react-navigation/native-stack": "^6.9.1",
+    "@rneui/base": "^4.0.0-rc.6",
+    "@rneui/themed": "^4.0.0-rc.6",
+    "expo": "~46.0.16",
+    "expo-image-picker": "~13.3.1",
+    "expo-status-bar": "~1.4.0",
+    "firebase": "^9.6.11",
+    "react": "18.0.0",
+    "react-native": "0.69.6",
+    "react-native-elements": "^3.4.2",
+    "react-native-gesture-handler": "^2.5.0",
+    "react-native-image-crop-picker": "^0.38.1",
+    "react-native-paper": "^5.0.0-rc.6",
+    "react-native-reanimated": "~2.9.1",
+    "react-native-simple-toast": "^1.1.4",
+    "react-native-toast-message": "^2.1.5",
+    "react-seven-segment-display": "^2.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9"
+  },
+  "private": true
+}
