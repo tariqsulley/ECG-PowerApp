@@ -65,7 +65,7 @@ class FaultView extends Component{
         
                 <View style={styles.Subject}>
                 <Text style={{fontWeight:"bold",margin:10}}> Subject </Text>
-                <Text style={styles.Fault}> Fault</Text>
+                <Text style={styles.Fault}> Fault/Outage</Text>
                 <Text style={{margin:10,color:"grey"}}>Report any meter or transmission fault,billing or service issue.</Text>
                 </View>
                 <View style={styles.Comment}>
