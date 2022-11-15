@@ -6,6 +6,7 @@ import BulbIcon from "react-native-vector-icons/MaterialCommunityIcons"
 import DangerousIcon from "react-native-vector-icons/MaterialIcons"
 import { TouchableOpacity } from 'react-native'
 import FaultView from './ComplaintPageScreens/Fault'
+import DisconnectionView from './ComplaintPageScreens/Disconnetion'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 const Stack = createNativeStackNavigator()
@@ -69,7 +70,8 @@ class ComplaintView extends Component{
     return(
      <Stack.Navigator>
       <Stack.Screen options={{headerShown:false}} name="Complaint" component={Complaint}/>
-      <Stack.Screen options={{headerShown:false}} name="Fault" component={FaultView}/>
+      <Stack.Screen options={{headerShown:true}} name="Fault" component={FaultView}/>
+      <Stack.Screen options={{headerShown: true}} name="Disconnection" component={DisconnectionView}/>
      </Stack.Navigator>
     )
   }
